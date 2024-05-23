@@ -1,4 +1,4 @@
-# AI-Coding-assistant
+# AI-Coding-assistant-with-Llama3
 
 Let's build an AI Coding assistant with Llama3  
 

@@ -25,16 +25,15 @@ Download and install Ollama from ollama.com.
 
 3. **Download the Llama3 model:**
 
-bash
 ollama pull llama3
 
 4. **Create the AI Coding Assistant model:**
 
 Ensure you have the Modelfile in the repository. Then run:
-bash
+
 ollama create my-python-assistant -f ./Modelfile
 
-5.List your models to confirm:
+5.**List your models to confirm:**
 
 ollama list
 You should see my-python-assistant listed.

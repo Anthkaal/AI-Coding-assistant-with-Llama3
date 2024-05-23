@@ -1,22 +1,56 @@
-# AI-Coding-assistant-with-Llama3
+# AI Coding Assistant with Llama3
 
-Let's build an AI Coding assistant with Llama3  
+This repository contains the setup and configuration for an AI Coding Assistant using the Llama3 model.
 
-Step 1. Download llama3 with Ollama 🦙
+## Getting Started
 
-Ollama is an open-source tool to run Large Language Models locally, that you can download for free from here.
-ollama.com
+Follow these instructions to set up the AI Coding Assistant on your local machine.
 
-You can now download llama3 (8B parameters), from the command line
-$ ollama pull llama3
+### Prerequisites
 
-Step 2. Add a System Message to llama3 to act as a Python coding assistant
+- Git
+- Ollama (an open-source tool to run large language models locally)
 
-Pass a system message to Llama3, to steer the model towards your goal.
+### Installation
 
-You can achieve this will Ollama in 2 steps:
+1. **Clone the repository:**
 
-1. Create a Modelfile with your adjustments
-2. $ ollama create my-python-assistant -f ./Modelfile
+   ```bash
+   git clone https://github.com/Anthkaal/AI-Coding-assistant-with-Llama3.git
+   cd AI-Coding-assistant-with-Llama3
 
-If you now list your models you will find your newly created my-python-assistant
+2. Install Ollama:
+
+Download and install Ollama from ollama.com.
+
+3. Download the Llama3 model:
+ollama pull llama3
+
+4. Create the AI Coding Assistant model:
+
+Ensure you have the Modelfile in the repository. Then run:
+
+ollama create my-python-assistant -f ./Modelfile
+
+5.List your models to confirm:
+
+ollama list
+You should see my-python-assistant listed.
+
+Usage
+To start using the AI Coding Assistant, you can now run queries against the my-python-assistant model using Ollama's command-line interface or any integrated development environment (IDE) that supports it.
+
+Example Usage
+You can interact with the AI Coding Assistant through the command line or an integrated development environment (IDE). Here's a simple example using the command line:
+
+
+ollama run my-python-assistant "Write a Python function to reverse a string."
+This command will prompt the AI Coding Assistant to generate a Python function that reverses a string.
+
+Contributing
+Feel free to fork this repository and submit pull requests to contribute to the project.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.   
+
+

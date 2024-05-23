@@ -24,19 +24,21 @@ Follow these instructions to set up the AI Coding Assistant on your local machin
 Download and install Ollama from ollama.com.
 
 3. **Download the Llama3 model:**
-
-ollama pull llama3
+    ```bash
+    ollama pull llama3
 
 4. **Create the AI Coding Assistant model:**
 
-Ensure you have the Modelfile in the repository. Then run:
-
-ollama create my-python-assistant -f ./Modelfile
+    Ensure you have the Modelfile in the repository. Then run:
+    ```bash
+    ollama create my-python-assistant -f ./Modelfile
 
 5.**List your models to confirm:**
+   
+    ```bash     
+    ollama list
 
-ollama list
-You should see my-python-assistant listed.
+  You should see my-python-assistant listed.
 
 Usage
 To start using the AI Coding Assistant, you can now run queries against the my-python-assistant model using Ollama's command-line interface or any integrated development environment (IDE) that supports it.
